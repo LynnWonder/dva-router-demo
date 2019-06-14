@@ -1,7 +1,6 @@
 import React,{PureComponent} from 'react';
 import { connect } from 'dva';
 import PropTypes from 'prop-types';
-import {renderRoutes} from "react-router-config";
 import styles from './IndexPage.css';
 
 class IndexPage extends PureComponent {
@@ -41,11 +40,10 @@ class IndexPage extends PureComponent {
 }
 
   render() {
-    console.info(this.props.route.routes)
+    console.info('-------父组件---props--')
+    console.info(this.props)
     return (
       <div>
-        <div className={styles.normal}>
-          <div className={styles.welcome}/>
           <div>
             <input type="number" onChange={this.handleChange} placeholder="0"/>
             <button onClick={this.handleClick}>specialAdd</button>
@@ -53,9 +51,7 @@ class IndexPage extends PureComponent {
           <button className={styles.minus} onClick={this.minusClick}>-</button>
           {this.props.count}
           <button className={styles.add} onClick={this.addClick}>+</button>
-        </div>
         <div className="sub-pages">
-          {renderRoutes(this.props.route.routes)}
         </div>
       </div>
     );

@@ -1,11 +1,12 @@
-import IndexPage from '../components/IndexPage'
-import NotFound from '../components/NotFound'
-import Another from '../components/Another'
 import React from "react";
 import {Redirect} from "react-router";
+import IndexPage from '../components/IndexPage'
+import Another from '../components/Another'
+import ToDoList from '../components/todolist'
+
 const routeConfig = [
   {
-    path:'/',
+    path:'/counter',
     component: IndexPage,
     routes: [
       {
@@ -20,11 +21,16 @@ const routeConfig = [
           return <div>this is a home page!</div>
         }
       },
-      {
-        path:"/*",
-        component:()=><Redirect to="/home"/>
-      }
     ]
+  },
+  {
+    path:"/todo",
+    exact:true,
+    component:ToDoList,
+  },
+  {
+    path:"/*",
+    component:()=><Redirect to="/counter"/>
   },
 ];
 

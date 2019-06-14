@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import { renderRoutes } from 'react-router-config';
+import {NavLink} from "react-router-dom";
+import style from './Home.less'
+import styles from "./IndexPage.css";
 export default class Home extends Component {
     constructor(props) {
         super(props);
@@ -12,7 +15,15 @@ export default class Home extends Component {
       console.log(routes)
         return (
             <div>
+              <div className={styles.normal}>
+                <div className={styles.welcome}/>
+                <div>welcome this is a home page~~~</div>
+              <ul className={style.ulist}>
+                <li className={style.list}><NavLink to="/counter" activeStyle={{color:'blue'}}>counter</NavLink></li>
+                <li className={style.list}><NavLink to="/todo" activeStyle={{color:'blue'}}>to do list</NavLink></li>
+              </ul>
               {renderRoutes(routes)}
+              </div>
             </div>
         )
     }
