@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
+import {connect} from 'dva'
 import PropTypes from 'prop-types';
 import styles from './todolist.css'
-import {connect} from 'dva'
+
 
 class todolist extends Component {
   static propsTypes={

@@ -1,7 +1,8 @@
 import dva from 'dva';
-import './index.css';
 import {createBrowserHistory as createHistory} from "history";
 import models from './models/index'
+import './index.css'
+
 // 1. Initialize
 const app = dva({
   history:createHistory()
@@ -11,10 +12,10 @@ const app = dva({
 // app.use({});
 
 // 3. Model
-[...models].forEach((model) => {app.model(model.default||model);})
+// [...models].forEach((model) => {app.model(model.default||model);})
 
 // 4. Router
 app.router(require('./routes/index'));
-
+[...models].forEach(model => app.model(model.default||model))
 // 5. Start
 app.start('#root');
