@@ -1,9 +1,10 @@
 import * as todoService from '../services/todo'
-
+let todolist=localStorage.getItem('todo');
+todolist=todolist?JSON.parse(todolist):[];
 export default {
   namespace: 'todo',
   state: {
-    list: [] //state初始值，list为空
+    list: todolist //state初始值，读取localStorage中的内容
   },
   reducers: {  //修改state的地方
     save(state, { payload: { list } }) {
@@ -28,7 +29,9 @@ export default {
       tempObj.title=value;
       tempObj.id=list.length;
       tempObj.finished=false;
+      tempObj.change=false;
       list.push(tempObj);
+      localStorage.setItem('todo',JSON.stringify(list));
       yield put({type:'save',payload:{list}})
     },
     *toggle({ payload: index }, { call, put, select }) {
@@ -39,6 +42,8 @@ export default {
       list = list.concat(tempList)
       let obj = list[index]
       obj.finished = !obj.finished;
+      obj.change=false;
+      localStorage.setItem('todo',JSON.stringify(list));
       // 最后一定都要进行一下保存
       yield put({ type: 'save', payload: { list } })
     },
@@ -48,6 +53,7 @@ export default {
       let list = []
       list = list.concat(tempList)
       list.splice(index, 1)
+      localStorage.setItem('todo',JSON.stringify(list))
       yield put({ type: 'save', payload: { list } })
     },
     *modify({ payload: { value, index } }, { call, put, select }) {
@@ -58,7 +64,21 @@ export default {
       let tempObj = list[index]
       // 替换一下title
       tempObj.title = value;
+      tempObj.change=false;
       list.splice(index,1,tempObj);
+      localStorage.setItem('todo',JSON.stringify(list));
+      yield put({ type: 'save', payload: { list } })
+    },
+    *change({payload:{index}},{call,put,select}){
+      // const data = yield call(todoService.query, value)
+      let tempList = yield select(state => state.todo.list)
+      let list = []
+      list = list.concat(tempList)
+      let tempObj = list[index]
+      // 替换一下title
+      tempObj.change=true;
+      list.splice(index,1,tempObj);
+      localStorage.setItem('todo',JSON.stringify(list));
       yield put({ type: 'save', payload: { list } })
     }
   },

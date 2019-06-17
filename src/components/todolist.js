@@ -18,6 +18,11 @@ class todolist extends Component {
       value: ''
     }
   }
+  componentDidMount() {
+    // 删除localStorage中的值
+    // localStorage.removeItem('todo');
+  }
+
   removeItem=async (index)=>{
     this.props.dispatch({
       type: 'todo/delete',
@@ -32,10 +37,16 @@ class todolist extends Component {
     })
   }
   modifyItem=async (value, index)=>{
-    this.input.readOnly=true;
     this.props.dispatch({
       type: 'todo/modify',
       payload: {value, index}
+    })
+  }
+  // 用来修改输入框是否可以修改用
+  changeItem=async (index)=>{
+    this.props.dispatch({
+      type:'todo/change',
+      payload:{index}
     })
   }
   addTodo(value) {
@@ -43,6 +54,7 @@ class todolist extends Component {
       type: 'todo/addTodo',
       payload: value
     })
+    // this._saveItem(value);
     this.setState({value: ''})
   }
   handleClick=()=>{
@@ -51,6 +63,8 @@ class todolist extends Component {
   render() {
     const { list } = this.props;
     let count = 0
+    // console.info('list--------');
+    // console.info(list);
     // 下面的逻辑是：定义count为如果item不是完成状态则count+1
     // 用map逻辑没毛病，不会修改原数组
     list.map(item => count = !item.finished ? count + 1 : count)
@@ -100,10 +114,9 @@ class todolist extends Component {
                           this.modifyItem(title, index)
                         }
                       }}
-                      readOnly="true"
-                      ref={(input)=>this.input=input}
+                      disabled={!item.change}
                     />
-                    <button onClick={()=>this.input.readOnly=false}>改</button>
+                    <button onClick={()=>{this.changeItem(index)}}>改</button>
                     <button onClick={() =>this.removeItem(index)}>删</button>
                   </li>
                 )
