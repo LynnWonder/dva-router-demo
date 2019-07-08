@@ -15,7 +15,8 @@ class todolist extends Component {
     super(props)
     this.state = {
       // 此处把value放在state比较好，外界不能修改这个value只能通过setState来change
-      value: ''
+      value: '',
+      change:false,
     }
   }
   componentDidMount() {
@@ -23,27 +24,31 @@ class todolist extends Component {
     // localStorage.removeItem('todo');
   }
 
-  removeItem=async (index)=>{
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.info('prevProps',prevProps);
+  }
+
+  removeItem= (index)=>{
     this.props.dispatch({
       type: 'todo/delete',
       payload: index
     })
   }
 
-  toggleItem=async (index)=>{
+  toggleItem= (index)=>{
     this.props.dispatch({
       type: 'todo/toggle',
       payload: index
     })
   }
-  modifyItem=async (value, index)=>{
+  modifyItem= (value, index)=>{
     this.props.dispatch({
       type: 'todo/modify',
       payload: {value, index}
     })
   }
   // 用来修改输入框是否可以修改用
-  changeItem=async (index)=>{
+  changeItem=(index)=>{
     this.props.dispatch({
       type:'todo/change',
       payload:{index}
@@ -54,7 +59,6 @@ class todolist extends Component {
       type: 'todo/addTodo',
       payload: value
     })
-    // this._saveItem(value);
     this.setState({value: ''})
   }
   handleClick=()=>{
@@ -63,8 +67,10 @@ class todolist extends Component {
   render() {
     const { list } = this.props;
     let count = 0
-    // console.info('list--------');
-    // console.info(list);
+    // 修复bug:在list列表删除指定条目后，store以及取出的值(包括打印mapStateToProps)都相应改变，
+    // 但是删除的条目不对总是从最后一条开始删除，定位问题是defaultValue的问题
+
+
     // 下面的逻辑是：定义count为如果item不是完成状态则count+1
     // 用map逻辑没毛病，不会修改原数组
     list.map(item => count = !item.finished ? count + 1 : count)
@@ -106,12 +112,17 @@ class todolist extends Component {
                     />
                     <input
                       style={{width: 200,height: 20}}
-                      defaultValue={item.title}
+                      // defaultValue={item.title}
+                      value={item.title}
                       autoFocus={false}
-                      onKeyDown={(e) => {
-                        if (e.keyCode === 13){
+                      onChange={(e) => {
                           let title = e.target.value
                           this.modifyItem(title, index)
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.keyCode === 13){
+                          // 修改输入框可编辑状态
+                          this.changeItem(index);
                         }
                       }}
                       disabled={!item.change}
@@ -129,11 +140,11 @@ class todolist extends Component {
   }
 }
 // 解构赋值：从state中解构出来todo对象
-const mapStateToProps=({todo})=>(
-  {
-    list: todo.list
+const mapStateToProps=({todo})=>{
+  return {
+    list:[...todo.list],
   }
-)
+}
 
 
 const _todolist = connect(mapStateToProps)(todolist)

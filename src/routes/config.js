@@ -3,6 +3,7 @@ import {Redirect} from "react-router";
 import IndexPage from '../components/IndexPage'
 import Another from '../components/Another'
 import ToDoList from '../components/todolist'
+import Input from '../components/Input'
 
 const routeConfig = [
   {
@@ -27,6 +28,11 @@ const routeConfig = [
     path:"/todo",
     exact:true,
     component:ToDoList,
+  },
+  {
+    path:"/input",
+    exact:true,
+    component:Input,
   },
   {
     path:"/*",

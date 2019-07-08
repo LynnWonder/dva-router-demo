@@ -21,6 +21,7 @@ export default class Home extends Component {
               <ul className={style.ulist}>
                 <li className={style.list}><NavLink to="/counter" activeStyle={{color:'blue'}}>counter</NavLink></li>
                 <li className={style.list}><NavLink to="/todo" activeStyle={{color:'blue'}}>to do list</NavLink></li>
+                <li className={style.list}><NavLink to="/input" activeStyle={{color:'blue'}}>upload images</NavLink></li>
               </ul>
               {renderRoutes(routes)}
               </div>

@@ -52,6 +52,7 @@ export default {
       let tempList = yield select(state => state.todo.list)
       let list = []
       list = list.concat(tempList)
+      console.info('----delete-model',index);
       list.splice(index, 1)
       localStorage.setItem('todo',JSON.stringify(list))
       yield put({ type: 'save', payload: { list } })
@@ -64,7 +65,7 @@ export default {
       let tempObj = list[index]
       // 替换一下title
       tempObj.title = value;
-      tempObj.change=false;
+      tempObj.change=true;
       list.splice(index,1,tempObj);
       localStorage.setItem('todo',JSON.stringify(list));
       yield put({ type: 'save', payload: { list } })
@@ -76,7 +77,7 @@ export default {
       list = list.concat(tempList)
       let tempObj = list[index]
       // 替换一下title
-      tempObj.change=true;
+      tempObj.change=!tempObj.change;
       list.splice(index,1,tempObj);
       localStorage.setItem('todo',JSON.stringify(list));
       yield put({ type: 'save', payload: { list } })
