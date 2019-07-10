@@ -3,7 +3,7 @@
 ## 入门dva框架的Counter Demo,
  
 ### 搭配react-router-config的简单使用
-- ~~搭配使用redirect 重定向实现所有路由匹配不到时跳转home主页
+- ~~搭配使用redirect 重定向实现所有路由匹配不到时跳转home主页~~
 - 使用react-router-config配置静态路由，通过renderRoutes返回路由配置组件<Switch><Route/></Switch>
 - renderRoutes传入额外参数判断用户登录态，做路由鉴权
 
