@@ -1,43 +1,47 @@
 import React from "react";
-import {Redirect} from "react-router";
-import IndexPage from '../components/IndexPage'
-import Another from '../components/Another'
-import ToDoList from '../components/todolist'
-import Input from '../components/Input'
+import Loadable from 'react-loadable';
+import IndexPage from '../components/IndexPage';
+import Another from '../components/Another';
+import ToDoList from '../components/todolist';
+import Input from '../components/Input';
+import Loading from '../components/Loading/Loading';
 
 const routeConfig = [
   {
-    path:'/counter',
-    component: IndexPage,
+    path:"/todo",
+    // component:ToDoList,
+    // 测试使用路由按需加载
+    component:Loadable({
+      loader:()=>import('../components/todolist'),
+      loading:Loading,
+      delay:1000,
+    }),
     routes: [
       {
-        path:"/another",
+        path:"/todo/another",
         exact:true,
         component:Another,
       },
-      {
-        path:"/home",
-        exact:true,
-        component:()=>{
-          return <div>this is a home page!</div>
-        }
-      },
-    ]
-  },
-  {
-    path:"/todo",
-    exact:true,
-    component:ToDoList,
+    ],
+    requiresAuth:false,
   },
   {
     path:"/input",
-    exact:true,
     component:Input,
+    exact:true,
+    requiresAuth:false,
   },
   {
-    path:"/*",
-    component:()=><Redirect to="/counter"/>
+    path:"/counter",
+    exact:true,
+    component:IndexPage,
+    requiresAuth:false,
   },
+  // {
+  //   path:"/*",
+  //   component:()=><Redirect to="/counter"/>,
+  //   requiresAuth:false,
+  // },
 ];
 
 export default routeConfig;

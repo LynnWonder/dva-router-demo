@@ -1,11 +1,14 @@
 {
   "entry": "src/index.js",
-  "less":false,
+  "less":true,
+  "disableCSSModules": false,
+  "disableDynamicImport":false,
   "env": {
     "development": {
       "extraBabelPlugins": [
         "dva-hmr",
-        "transform-runtime"
+        "transform-runtime",
+        "dynamic-import-webpack"
       ]
     },
     "production": {

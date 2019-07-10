@@ -1,8 +1,9 @@
-import React, {Component} from 'react'
-import {connect} from 'dva'
+import React, {Component} from 'react';
+import {connect} from 'dva';
 import PropTypes from 'prop-types';
-import styles from './todolist.css'
-
+import {renderRoutes} from 'react-router-config'
+import {NavLink} from "react-router-dom";
+import styles from './todolist.less';
 
 class todolist extends Component {
   static propsTypes={
@@ -16,16 +17,13 @@ class todolist extends Component {
     this.state = {
       // 此处把value放在state比较好，外界不能修改这个value只能通过setState来change
       value: '',
-      change:false,
+      // 标识登录与否
+      log:false,
     }
   }
   componentDidMount() {
     // 删除localStorage中的值
     // localStorage.removeItem('todo');
-  }
-
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    console.info('prevProps',prevProps);
   }
 
   removeItem= (index)=>{
@@ -64,8 +62,18 @@ class todolist extends Component {
   handleClick=()=>{
     this.addTodo(this.state.value)
   }
+
+  handleLog=()=>{
+    const {log}=this.state;
+    this.setState({log:!log});
+  }
+
+
   render() {
     const { list } = this.props;
+    const {log}=this.state;
+    const token=log?'aaa':null;
+    console.info('--todo--',this.props.route.routes);
     let count = 0
     // 修复bug:在list列表删除指定条目后，store以及取出的值(包括打印mapStateToProps)都相应改变，
     // 但是删除的条目不对总是从最后一条开始删除，定位问题是defaultValue的问题
@@ -84,6 +92,7 @@ class todolist extends Component {
           style={{borderWidth: 1, borderColor: 'red'}}
           placeholder="请输入代办事项~~~"
           value={this.state.value}
+          autoFocus={true}
           onChange={(e) => this.setState({value: e.target.value})}
           onKeyDown={(e) => {
             if (e.keyCode === 13){
@@ -135,7 +144,14 @@ class todolist extends Component {
             }
           </ul>
         </span>
+        <input type="checkbox" checked={log} onChange={this.handleLog}/>
+        {log?'已登录':'未登录'}
+        <ul>
+          <li><NavLink to="/todo/another">another</NavLink></li>
+        </ul>
+        {renderRoutes(this.props.route.routes, {token:token})}
       </div>
+
     )
   }
 }

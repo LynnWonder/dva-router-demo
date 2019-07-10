@@ -1,7 +1,7 @@
 import React,{PureComponent} from 'react';
 import { connect } from 'dva';
 import PropTypes from 'prop-types';
-import styles from './IndexPage.css';
+import styles from './IndexPage.less';
 
 class IndexPage extends PureComponent {
   static propTypes = {

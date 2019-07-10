@@ -2,17 +2,16 @@ import React, {Component} from 'react';
 import { renderRoutes } from 'react-router-config';
 import {NavLink} from "react-router-dom";
 import style from './Home.less'
-import styles from "./IndexPage.css";
+import styles from "./IndexPage.less";
+
 export default class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {};
     }
 
-    render() {
+   render() {
       const {routes}=this.props;
-      console.log(this.props)
-      console.log(routes)
         return (
             <div>
               <div className={styles.normal}>
