@@ -149,7 +149,7 @@ class todolist extends Component {
         <ul>
           <li><NavLink to="/todo/another">another</NavLink></li>
         </ul>
-        {renderRoutes(this.props.route.routes, {token:token})}
+        {renderRoutes(this.props.route.routes, {token})}
       </div>
 
     )

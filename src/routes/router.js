@@ -1,6 +1,6 @@
 import React from 'react';
 import {routerRedux, Route, Switch} from 'dva/router';
-import IndexPage from '../components/IndexPage';
+import IndexPage from '../components/IndexPage/IndexPage';
 
 const {ConnectedRouter}=routerRedux;
 function RouterConfig({ history }) {

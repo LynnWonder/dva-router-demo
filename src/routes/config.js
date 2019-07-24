@@ -1,10 +1,11 @@
 import React from "react";
 import Loadable from 'react-loadable';
-import IndexPage from '../components/IndexPage';
-import Another from '../components/Another';
-import ToDoList from '../components/todolist';
-import Input from '../components/Input';
+import IndexPage from '../components/IndexPage/IndexPage';
+import Another from '../components/Another/Another';
+import ToDoList from '../components/TodoList/todolist';
+import Input from '../components/Input/Input';
 import Loading from '../components/Loading/Loading';
+import ZoomImg from '../components/ZoomImg/ZoomImg';
 
 const routeConfig = [
   {
@@ -12,7 +13,7 @@ const routeConfig = [
     // component:ToDoList,
     // 测试使用路由按需加载
     component:Loadable({
-      loader:()=>import('../components/todolist'),
+      loader:()=>import('../components/TodoList/todolist'),
       loading:Loading,
       delay:1000,
     }),
@@ -23,19 +24,21 @@ const routeConfig = [
         component:Another,
       },
     ],
-    requiresAuth:false,
   },
   {
     path:"/input",
     component:Input,
     exact:true,
-    requiresAuth:false,
   },
   {
     path:"/counter",
     exact:true,
     component:IndexPage,
-    requiresAuth:false,
+  },
+  {
+    path:"/zoom",
+    exact:true,
+    component:ZoomImg,
   },
   // {
   //   path:"/*",

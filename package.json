@@ -16,6 +16,7 @@
     "history": "^4.9.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "pinch-zoom-js": "^2.3.4",
     "prop-types": "^15.7.2",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",

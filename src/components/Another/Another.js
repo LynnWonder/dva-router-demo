@@ -17,7 +17,7 @@ export default class Another extends Component {
     }
 
     render() {
-      console.info('another',this.props.token);
+      console.info('another',this.props);
       const {token}=this.props;
       if (token){
         return (
