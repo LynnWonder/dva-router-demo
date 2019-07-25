@@ -18,3 +18,6 @@
 - 方法一：手机端请用charles添加map local映射，自己编一个网址，同时修改电脑host对应到127.0.0.1方便DNS查找的时候查找到本地网页，此时可以查看手势缩放效果；
 - 方法二：ipconfig查看本机IP，手机访问ip:port/routes即可
 以上
+### lottie使用：
+/lottie下可以toggle点击like
+/lottie/more是copy的react-lottie中的demo
