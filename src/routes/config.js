@@ -6,6 +6,8 @@ import ToDoList from '../components/TodoList/todolist';
 import Input from '../components/Input/Input';
 import Loading from '../components/Loading/Loading';
 import ZoomImg from '../components/ZoomImg/ZoomImg';
+import LottieDemo from '../components/LottieDemo/LottieDemo';
+import LottieMore from '../components/LottieDemo/OtherDemo/OtherDemo';
 
 const routeConfig = [
   {
@@ -39,6 +41,17 @@ const routeConfig = [
     path:"/zoom",
     exact:true,
     component:ZoomImg,
+  },
+  {
+    path:"/lottie",
+    component:LottieDemo,
+    routes: [
+      {
+        path:"/lottie/more",
+        exact:true,
+        component:LottieMore,
+      },
+    ],
   },
   // {
   //   path:"/*",

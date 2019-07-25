@@ -16,11 +16,13 @@
     "history": "^4.9.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "lottie-web": "^5.5.7",
     "pinch-zoom-js": "^2.3.4",
     "prop-types": "^15.7.2",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "react-loadable": "^5.5.0",
+    "react-lottie": "^1.2.3",
     "react-router-config": "^5.0.1",
     "react-router-dom": "^4.3.1"
   },

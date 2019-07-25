@@ -1,0 +1,43 @@
+.lottie-0{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100px,0);
+  width: 200px;
+  height:200px;
+  .lottie-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10px,-10px);
+    z-index: 999;
+    width: 20px;
+    height:20px;
+  }
+}
+.lottie-footer{
+  top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  .iconafter('\e639',18px);
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../assets/fonts/iconfont.eot');
+  src: url('../../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/iconfont.woff2') format('woff2'),
+  url('../../assets/fonts/iconfont.woff') format('woff'),
+  url('../../assets/fonts/iconfont.ttf') format('truetype'),
+  url('../../assets/fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconafter(@font,@size) {
+  &::after {
+    content: @font;
+    font-family: 'iconfont';
+    font-size:@size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+  }
+}
+
