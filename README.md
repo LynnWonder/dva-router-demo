@@ -19,5 +19,7 @@
 - 方法二：ipconfig查看本机IP，手机访问ip:port/routes即可
 以上
 ### lottie使用：
-/lottie下可以toggle点击like
+/lottie下：第一个动画toggle点击like
+第二个动画监听事件，打开调试工具查看即可
+第三个动画可以手动输入修改text
 /lottie/more是copy的react-lottie中的demo
