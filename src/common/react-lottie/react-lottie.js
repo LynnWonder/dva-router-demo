@@ -52,6 +52,9 @@ export default class Lottie extends React.Component {
     } else {
       this.play();
     }
+    if (JSON.stringify(this.props.updateDocumentData)!==''&&this.anim.renderer.elements[0].updateDocumentData){
+      this.anim.renderer.elements[0].updateDocumentData(this.props.updateDocumentData.doc,this.props.updateDocumentData.kfm);
+    }
 
     this.pause();
     this.setSpeed();
@@ -185,6 +188,7 @@ Lottie.propTypes = {
   isClickToPauseDisabled: PropTypes.bool,
   title: PropTypes.string,
   style: PropTypes.string,
+  updateDocumentData: PropTypes.object,
 };
 
 Lottie.defaultProps = {
@@ -196,4 +200,5 @@ Lottie.defaultProps = {
   ariaLabel: 'animation',
   isClickToPauseDisabled: false,
   title: '',
+  updateDocumentData:{},
 };

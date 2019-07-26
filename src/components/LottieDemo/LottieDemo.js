@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import * as animationDataA from '../../assets/json/TwitterHeart.json';
 import * as animationDataB from '../../assets/json/2016.json';
+import * as animationDataC from '../../assets/json/Font.json';
 // 这里可以看react-lottie源码
 import Lottie from '../../common/react-lottie/react-lottie';
 import {renderRoutes} from 'react-router-config';
@@ -14,6 +15,7 @@ export default class LottieDemo extends Component {
           isStopped: true,
           direction: 1,
           speed: 3,
+          docTxt:'',
         };
     }
 
@@ -42,7 +44,16 @@ export default class LottieDemo extends Component {
       })
   }
 
+  handleInput=(e) => {
+    if (e.keyCode === 13){
+      if (e.target.value){
+        this.setState({docTxt:e.target.value})
+      }
+    }
+  }
+
   render() {
+    const {isStopped,direction,speed,docTxt}=this.state;
     const defaultOptions = [
       {
         animationData: animationDataA,
@@ -53,8 +64,17 @@ export default class LottieDemo extends Component {
         animationData: animationDataB,
         loop: true,
         autoplay: true,
+      },
+      {
+        animationData: animationDataC,
+        loop: true,
+        autoplay: true,
       }
     ];
+    const documentData={
+      doc:{t: docTxt, s: 70},
+      kfm:0,
+    }
     const handler=[
       {
         eventName:'loopComplete',
@@ -63,7 +83,6 @@ export default class LottieDemo extends Component {
         }
       }
     ];
-    const {isStopped,direction,speed}=this.state;
     // console.info(this.props);
         return (
           <div>
@@ -83,7 +102,20 @@ export default class LottieDemo extends Component {
               options={defaultOptions[1]}
               eventListeners={handler}
             />
+            <div className={style['lottie-2']}>
+              <Lottie
+                options={defaultOptions[2]}
+                updateDocumentData={documentData}
+              />
+              <p>
+                <input type="text"  onKeyDown={this.handleInput}/>
+                <span>tips:输入完成后敲击回车改变内容哦~</span>
+              </p>
+            </div>
             {renderRoutes(this.props.route.routes)}
+            {/* 另一张引入Lottie动画的方式，不推荐使用 */}
+            {/*<div style={{width:'500px',height:'500px'}} className="lottie" data-animation-path="../../assets/json/bell.json"*/}
+            {/*     data-anim-loop="true" data-name="ninja"></div>*/}
           </div>
         )
     }
