@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8d9bb2e9-606d-4c78-8526-751c9ad1bfdf" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/react-lottie/react-lottie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/react-lottie/react-lottie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PinchZoom/pinchzoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PinchZoom/pinchzoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,63 +22,77 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/LottieDemo/OtherDemo/OtherDemo.js">
+        <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/pinchzoom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="1575">
+              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/testHammer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-500">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/index.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.js">
+        <entry file="file://$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#177#237#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/TodoList/todolist.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="115" column="37" lean-forward="true" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="e#9#288#0" />
-                <element signature="e#303#393#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/react-lottie/react-lottie.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="150">
               <caret line="61" column="3" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -91,25 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>prev</find>
-      <find>modifyItem</find>
-      <find>RouterConfig</find>
-      <find>requiresAuth</find>
-      <find>change</find>
-      <find>loader</find>
-      <find>styles</find>
-      <find>renderRoutes</find>
-      <find>url</find>
-      <find>yay</find>
-      <find>welcome</find>
-      <find>height</find>
-      <find>container</find>
-      <find>this.container</find>
-      <find>setContainerY</find>
-      <find>img</find>
-      <find>path</find>
-      <find>format</find>
-      <find>assetLoader</find>
       <find>params.path</find>
       <find>loadAsset</find>
       <find>getPath</find>
@@ -121,6 +119,25 @@
       <find>isClickToPauseDisabled</find>
       <find>ariaRole</find>
       <find>setDirection</find>
+      <find>buildElement</find>
+      <find>createElement</find>
+      <find>this.container</find>
+      <find>build</find>
+      <find>window.set</find>
+      <find>setTime</find>
+      <find>setInterval</find>
+      <find>setup</find>
+      <find>init</find>
+      <find>nowScale</find>
+      <find>requestElementUpdate</find>
+      <find>reqAnimationFrame</find>
+      <find>_initPinchZoom</find>
+      <find>lastcenter</find>
+      <find>eruda</find>
+      <find>poscenter</find>
+      <find>zoomStart</find>
+      <find>panmove</find>
+      <find>el</find>
     </findStrings>
     <replaceStrings>
       <replace>todolist</replace>
@@ -160,19 +177,23 @@
         <option value="$PROJECT_DIR$/src/components/Input/Input.js" />
         <option value="$PROJECT_DIR$/node_modules/pinch-zoom-js/src/pinch-zoom.js" />
         <option value="$PROJECT_DIR$/src/PinchZoom/pinchzoom.js" />
-        <option value="$PROJECT_DIR$/src/components/PinchZoom/pinchzoom.js" />
-        <option value="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js" />
-        <option value="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.less" />
         <option value="$PROJECT_DIR$/src/components/Lottie/Lottie.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/LottieDemo/OtherDemo/OtherDemo.js" />
-        <option value="$PROJECT_DIR$/src/routes/config.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/index.less" />
         <option value="$PROJECT_DIR$/src/common/react-lottie/react-lottie.js" />
         <option value="$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.less" />
         <option value="$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.js" />
+        <option value="$PROJECT_DIR$/src/components/PinchZoom/my_pinchzoom.js" />
+        <option value="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.less" />
+        <option value="$PROJECT_DIR$/src/components/PinchZoom/pinchzoom.js" />
+        <option value="$PROJECT_DIR$/src/components/PinchZoom/HammerJS.js" />
+        <option value="$PROJECT_DIR$/src/routes/config.js" />
+        <option value="$PROJECT_DIR$/src/components/PinchZoom/index.less" />
+        <option value="$PROJECT_DIR$/src/components/PinchZoom/testHammer.js" />
+        <option value="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js" />
       </list>
     </option>
   </component>
@@ -186,10 +207,10 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="576" />
-    <option name="y" value="126" />
+    <option name="x" value="442" />
+    <option name="y" value="187" />
     <option name="width" value="1937" />
-    <option name="height" value="915" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -199,7 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,19 +231,6 @@
               <item name="react-dva-counter" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-dva-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-dva-counter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-dva-counter" type="b2602c69:ProjectViewProjectNode" />
@@ -249,6 +256,13 @@
               <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-dva-counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="LottieDemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,12 +278,33 @@
               <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="PinchZoom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-dva-counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="TodoList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-dva-counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ZoomImg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-dva-counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-dva-counter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,7 +314,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/json" />
+    <property name="last_opened_file_path" value="E:/tju/笔试题" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="wsl://UBUNTU@/root/.nvm/versions/node/v8.11.1/bin/node" />
@@ -369,18 +404,20 @@
       <workItem from="1562738954420" duration="4121000" />
       <workItem from="1563158823765" duration="3643000" />
       <workItem from="1563958152650" duration="8316000" />
-      <workItem from="1564024176322" duration="25178000" />
+      <workItem from="1564024176322" duration="37724000" />
+      <workItem from="1564143512811" duration="8908000" />
+      <workItem from="1564363810899" duration="18837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134679000" />
+    <option name="totallyTimeSpent" value="174970000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="461" y="101" width="1549" height="732" extended-state="0" />
+    <frame x="354" y="150" width="1549" height="657" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1307847" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13480885" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -392,7 +429,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32333332" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.41333333" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="PlantUML" order="0" />
@@ -405,44 +442,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/NotFound/NotFound.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="1645" column="24" selection-start-line="1645" selection-start-column="24" selection-end-line="1645" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/todolist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/counter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -496,13 +495,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/webpack.config.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Another/Another.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -553,16 +545,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/test.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Input/Input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/IndexPage/IndexPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -587,47 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/pinch-zoom-js/src/pinch-zoom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12075">
-          <caret line="509" column="59" selection-start-line="509" selection-start-column="59" selection-end-line="509" selection-end-column="59" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/practicesssss/testLottie/react-lottie-master/react-lottie-master/src/tests/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3619">
           <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/pinchzoom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,19 +586,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/json/data.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/json/data.json" />
     <entry file="file://$PROJECT_DIR$/src/assets/json/bell.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -661,13 +594,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LottieDemo/index.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LottieDemo/index.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/lottie-web/build/player/lottie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -685,15 +612,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/fonts/demo_index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/fonts/demo.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css" />
+    <entry file="file://$PROJECT_DIR$/src/assets/fonts/demo_index.html" />
+    <entry file="file://$PROJECT_DIR$/src/assets/fonts/demo.css" />
     <entry file="file://$PROJECT_DIR$/src/assets/fonts/iconfont.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -730,28 +651,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LottieDemo/OtherDemo/OtherDemo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="12">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/react-lottie/react-lottie.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Input/Input.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="61" column="3" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
+        <state relative-caret-position="275">
+          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="e#9#288#0" />
             <element signature="e#303#393#0" />
@@ -761,11 +682,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LottieDemo/LottieDemo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+        <state relative-caret-position="275">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#177#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/pinch-zoom-js/src/pinch-zoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="500" column="11" lean-forward="true" selection-end-line="914" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/react-lottie/react-lottie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/my_pinchzoom.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/eruda/eruda.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-hammerjs/dist/react-hammerjs.es.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/HammerJS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-875">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/pinchzoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PinchZoom/testHammer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="61" column="3" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

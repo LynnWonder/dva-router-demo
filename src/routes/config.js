@@ -8,6 +8,7 @@ import Loading from '../components/Loading/Loading';
 import ZoomImg from '../components/ZoomImg/ZoomImg';
 import LottieDemo from '../components/LottieDemo/LottieDemo';
 import LottieMore from '../components/LottieDemo/OtherDemo/OtherDemo';
+import Hammerjs from '../components/PinchZoom/testHammer';
 
 const routeConfig = [
   {
