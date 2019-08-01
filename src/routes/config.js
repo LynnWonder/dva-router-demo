@@ -6,6 +6,7 @@ import ToDoList from '../components/TodoList/todolist';
 import Input from '../components/Input/Input';
 import Loading from '../components/Loading/Loading';
 import ZoomImg from '../components/ZoomImg/ZoomImg';
+import Form from '../components/Form/Form';
 import LottieDemo from '../components/LottieDemo/LottieDemo';
 import LottieMore from '../components/LottieDemo/OtherDemo/OtherDemo';
 import Hammerjs from '../components/PinchZoom/testHammer';
@@ -53,6 +54,11 @@ const routeConfig = [
         component:LottieMore,
       },
     ],
+  },
+  {
+    path:"/form",
+    exact:true,
+    component:Form,
   },
   // {
   //   path:"/*",

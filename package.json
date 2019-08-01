@@ -10,6 +10,7 @@
     "install-node": "6.9.2"
   },
   "dependencies": {
+    "antd": "^3.20.7",
     "antd-mobile": "^2.2.14",
     "babel-runtime": "^6.9.2",
     "dva": "^2.4.1",

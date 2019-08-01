@@ -43,7 +43,7 @@ export default class ZoomImg extends Component {
       requestAnimationFrame(()=>{
         // 获取内部的dom元素
         this.el.domElement.style.transform = `scale(${this.transform.scale})`;
-        // 类似于节流功能
+        // 节流功能
         console.info('animating...');
         this.ticking = false;
       })

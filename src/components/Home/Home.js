@@ -23,6 +23,7 @@ export default class Home extends Component {
                 <li className={style.list}><NavLink to="/input" activeStyle={{color:'blue'}}>upload images</NavLink></li>
                 <li className={style.list}><NavLink to="/zoom" activeStyle={{color:'blue'}}>pinchzoom images</NavLink></li>
                 <li className={style.list}><NavLink to="/lottie" activeStyle={{color:'blue'}}>Lottie</NavLink></li>
+                <li className={style.list}><NavLink to="/form" activeStyle={{color:'blue'}}>antd-form</NavLink></li>
               </ul>
               {renderRoutes(routes)}
               </div>
