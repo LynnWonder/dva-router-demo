@@ -27,3 +27,6 @@ eruda可用于手机端调试控制台
 第二个动画监听事件，打开调试工具查看即可
 第三个动画可以手动输入修改text
 /lottie/more是copy的react-lottie中的demo
+### /form
+/routes/config下更改组件为Form可以看使用antd的form表单的使用
+更改组件为MyForm是我自己写的高阶组件表单，包含错误校验
