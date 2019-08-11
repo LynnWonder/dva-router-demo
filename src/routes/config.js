@@ -4,6 +4,7 @@ import IndexPage from '../components/IndexPage/IndexPage';
 import Another from '../components/Another/Another';
 import ToDoList from '../components/TodoList/todolist';
 import Input from '../components/Input/Input';
+import Parent from '../components/Input/Parent';
 import Loading from '../components/Loading/Loading';
 import ZoomImg from '../components/ZoomImg/ZoomImg';
 import Form from '../components/Form/Form';
@@ -33,7 +34,13 @@ const routeConfig = [
   {
     path:"/input",
     component:Input,
-    exact:true,
+    routes:[
+      {
+        path:"/input/pass",
+        exact:true,
+        component:Parent,
+      }
+    ]
   },
   {
     path:"/counter",

@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
+import {renderRoutes} from 'react-router-config';
+import {NavLink} from 'react-router-dom';
 import style from './input.less'
+
 
 export default class Input extends Component {
     constructor(props) {
@@ -10,7 +13,7 @@ export default class Input extends Component {
     }
     _getObjectURL(file) {
     var url = null;
-    if (window.createObjcectURL != undefined) {
+    if (window.createObjcectURL !== undefined) {
       url = window.createOjcectURL(file);
     } else if (window.URL != undefined) {
       url = window.URL.createObjectURL(file);
@@ -30,21 +33,22 @@ export default class Input extends Component {
       console.info(imgURL);
     this.setState({src:imgURL});
     this.input.value=null;
-  }
+  };
 
   // 点击图片删除
   handleImgDelete=(e)=>{
       console.info(e.target);
       this.setState({src:null});
-  }
+  };
     render() {
       const {src}=this.state;
-      // console.info(style);
         return (
             <div className={style['input-com']}>
               <input className={style.container} type="file" onChange={this.handleImageChange}
                      ref={(input)=>this.input=input}/>
-              <img  className={style.img} src={src} alt="上传图片" onClick={this.handleImgDelete}></img>
+              <img  className={style.img} src={src} alt="上传图片" onClick={this.handleImgDelete}/>
+              <NavLink to='/input/pass' className={style['input-footer']}>组件间传值</NavLink>
+              {renderRoutes(this.props.route.routes)}
             </div>
         )
     }

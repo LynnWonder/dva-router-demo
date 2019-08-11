@@ -12,5 +12,20 @@
     display: block;
     border:1px dotted indianred;
   }
+  .input-footer{
+    top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    .iconafter('\e639',17px);
+  }
 }
-
+.iconafter(@font,@size) {
+  &::after {
+    content: @font;
+    font-family: 'iconfont';
+    font-size:@size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+  }
+}
