@@ -3,6 +3,7 @@
   "less":true,
   "disableCSSModules": false,
   "disableDynamicImport":false,
+  "javascriptEnabled": true,
   "env": {
     "development": {
       "extraBabelPlugins": [

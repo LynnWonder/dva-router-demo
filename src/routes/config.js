@@ -7,6 +7,7 @@ import Input from '../components/Input/Input';
 import Loading from '../components/Loading/Loading';
 import ZoomImg from '../components/ZoomImg/ZoomImg';
 import Form from '../components/Form/Form';
+import MyForm from '../components/Form/MyForm';
 import LottieDemo from '../components/LottieDemo/LottieDemo';
 import LottieMore from '../components/LottieDemo/OtherDemo/OtherDemo';
 import Hammerjs from '../components/PinchZoom/testHammer';
@@ -58,7 +59,7 @@ const routeConfig = [
   {
     path:"/form",
     exact:true,
-    component:Form,
+    component:MyForm,
   },
   // {
   //   path:"/*",

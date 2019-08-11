@@ -2,7 +2,7 @@ import dva from 'dva';
 import {createBrowserHistory as createHistory} from "history";
 import models from './models/index';
 import './index.less';
-import 'antd-mobile/dist/antd-mobile.less';
+import 'antd-mobile/dist/antd-mobile.css';
 import 'antd/dist/antd.less';
 // 1. Initialize
 const app = dva({
