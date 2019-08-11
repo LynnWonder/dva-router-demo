@@ -19,11 +19,15 @@
 - 方法一：手机端请用charles添加map local映射，自己编一个网址，同时修改电脑host对应到127.0.0.1方便DNS查找的时候查找到本地网页，此时可以查看手势缩放效果；
 - 方法二：ipconfig查看本机IP，手机访问ip:port/routes即可
 ### hammer.js使用
-/zoom中点击按钮显示可以用hammer.js实现的手势缩放，其中使用react-hammerjs
-pinchzoom文件夹下testHammerjs是用hammer.js实现的移动和手势缩放功能的demo，修改路由表可以查看这个组件演示
-eruda可用于手机端调试控制台
+- /zoom中点击按钮显示可以用hammer.js实现的手势缩放，其中使用react-hammerjs
+- pinchzoom文件夹下testHammerjs是用hammer.js实现的移动和手势缩放功能的demo，修改路由表可以查看这个组件演示
+- eruda可用于手机端调试控制台
 ### lottie使用(移动端)：
-/lottie下：第一个动画toggle点击like
-第二个动画监听事件，打开调试工具查看即可
-第三个动画可以手动输入修改text
+- /lottie下：
+  - 第一个动画toggle点击like
+  - 第二个动画监听事件，打开调试工具查看即可
+  - 第三个动画可以手动输入修改text
 /lottie/more是copy的react-lottie中的demo
+### /form
+- /routes/config下更改组件为Form可以看使用antd的form表单的使用
+- 更改组件为MyForm是我自己写的高阶组件表单，包含错误校验
