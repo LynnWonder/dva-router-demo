@@ -5,7 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/Input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Input/input.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/input.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ZoomImg/ZoomImg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +144,11 @@
       <workItem from="1564363810899" duration="21356000" />
       <workItem from="1564651498697" duration="2697000" />
       <workItem from="1565449463256" duration="2051000" />
-      <workItem from="1565451664707" duration="10787000" />
+      <workItem from="1565451664707" duration="13645000" />
+      <workItem from="1566300432079" duration="1783000" />
+      <workItem from="1566353716425" duration="4000000" />
+      <workItem from="1566637371495" duration="995000" />
+      <workItem from="1566873796786" duration="1092000" />
     </task>
     <servers />
   </component>

@@ -33,11 +33,11 @@ export default class ZoomImg extends Component {
     this.setState({
       visible:!visible,
     })
-  }
+  };
 
   handleTap=()=>{
       Toast.info('tapping',1);
-  }
+  };
   requestElementUpdate=()=>{
     if(!this.ticking) {
       requestAnimationFrame(()=>{

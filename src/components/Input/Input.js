@@ -30,9 +30,10 @@ export default class Input extends Component {
       const URL = window.webkitURL;
       // 通过 file 生成目标 url
       const imgURL = this._getObjectURL(file);
-      console.info(imgURL);
-    this.setState({src:imgURL});
-    this.input.value=null;
+      console.info('uploading===>',imgURL);
+      this.setState({src:imgURL});
+      // 解决再次上传同一张图片不会触发onchange事件的问题
+      this.input.value=null;
   };
 
   // 点击图片删除
@@ -44,8 +45,11 @@ export default class Input extends Component {
       const {src}=this.state;
         return (
             <div className={style['input-com']}>
+              <form>
+                upload
               <input className={style.container} type="file" onChange={this.handleImageChange}
                      ref={(input)=>this.input=input}/>
+              </form>
               <img  className={style.img} src={src} alt="上传图片" onClick={this.handleImgDelete}/>
               <NavLink to='/input/pass' className={style['input-footer']}>组件间传值</NavLink>
               {renderRoutes(this.props.route.routes)}

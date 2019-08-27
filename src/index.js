@@ -13,10 +13,11 @@ const app = dva({
 // app.use({});
 
 // 3. Model
-// [...models].forEach((model) => {app.model(model.default||model);})
+[...models].forEach((model) => {app.model(model.default||model);});
 
 // 4. Router
 app.router(require('./routes/index'));
-[...models].forEach(model => app.model(model.default||model))
+
+
 // 5. Start
 app.start('#root');
